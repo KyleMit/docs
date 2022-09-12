@@ -10,6 +10,8 @@ ms.date: 08/27/2020
 
 ## Collect dumps on Linux
 
+[!NOTE] Frequently asked questions regarding dumps and information on M1 native debugging and dump collection can be found here.
+
 The two recommended ways of collecting dumps on Linux are:
 
 * [`dotnet-dump`](dotnet-dump.md) CLI tool
@@ -33,7 +35,7 @@ The `createdump` tool is installed with the .NET Core runtime and can be found n
 
 - **`-f|--name <output-filename>`**
 
-  The file to write the dump to. Default is '/tmp/coredump.%p' where %p is the process ID of the target process.
+  The file to write the dump to. Please ensure you have write access to the file path. Default is '/tmp/coredump.%p' where %p is the process ID of the target process.
 
 - **`-n|--normal`**
 
